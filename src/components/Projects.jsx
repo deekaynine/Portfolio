@@ -33,7 +33,7 @@ const Projects = () => {
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100 duration-1000">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+                Recipe Finder
               </span>
               <div className="pt-8 text-center">
                 <a
@@ -68,15 +68,15 @@ const Projects = () => {
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100 duration-1000">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+                Music Player
               </span>
               <div className="pt-8 text-center">
-                <a href="">
+                <a href="https://singular-sawine-981d3d.netlify.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="">
+                <a href="https://github.com/deekaynine/Moosic">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code{" "}
                   </button>
@@ -84,7 +84,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/*Project item 2*/}
+          {/*Project item 3*/}
           <div
             style={{
               backgroundImage: `url(${Eshop})`,
@@ -95,15 +95,15 @@ const Projects = () => {
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100 duration-1000">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+                Electronic Store
               </span>
               <div className="pt-8 text-center">
-                <a href="">
+                <a href="https://react-django-appstore.herokuapp.com/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="">
+                <a href="https://github.com/deekaynine/ReactDjangoShop">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code{" "}
                   </button>
@@ -111,7 +111,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/*Project item 2*/}
+          {/*Project item 4*/}
           <div
             style={{
               backgroundImage: `url(${cardblog})`,
@@ -122,15 +122,15 @@ const Projects = () => {
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100 duration-1000">
               <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+                Card Blog
               </span>
               <div className="pt-8 text-center">
-                <a href="">
+                <a href="https://elated-poitras-ca80e7.netlify.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="">
+                <a href="https://github.com/deekaynine/Card_Blog">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code{" "}
                   </button>
