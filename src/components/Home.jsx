@@ -4,14 +4,19 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-gray-200">
+    <div
+      name="home"
+      className="flex flex-col w-full h-screen bg-gray-200 lg:flex lg:flex-row items-center align-end justify-start"
+    >
       {/*Container */}
+
       <div
         className="max-w-[1000px] 
         mx-auto
         px-8
         flex
         flex-col
+        
         justify-center
         h-full
         "
