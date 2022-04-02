@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo2.png";
+import Logo from "../assets/Logo.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -13,34 +13,34 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
-        <img src={Logo} alt="Logo" style={{ width: "100px" }} />
+    <div className="fixed w-full h-[50px] mx-auto flex justify-between items-center p-5 bg-black text-gray-400 border-[0.5px] border-[#363636]">
+      <div className="mt-4">
+        <img src={Logo} alt="Logo" style={{ width: "120px" }} />
       </div>
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li>
+        <li className="hover:scale-110 duration-300 hover:text-white">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-110 duration-300 hover:text-white">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-110 duration-300 transition hover:text-white">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-110 duration-300 transition hover:text-white">
           <Link to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li>
+        <li className="hover:scale-125 duration-300 transition hover:text-white">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
