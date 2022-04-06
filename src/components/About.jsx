@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -23,11 +22,13 @@ const About = () => {
 
         <div className="max-w-[1000px] w-full grid  sm:grid-cols-2 gap-8 px-4 ">
           <div className="sm:text-right text-4xl font-bold ">
-            <p>Hi. I'm Matthew, nice to meet you. Please take a look around.</p>
+            <p className={`${isAnimated}`}>
+              Hi. I'm Matthew, nice to meet you. Please take a look around.
+            </p>
           </div>
 
           <div>
-            <p className="py-2">
+            <p className={`${isAnimated} py-2`}>
               I am passionate about building applications that improves the
               lives of others. Learning new ways to improve my coding
               capabilities is what I love doing and I wish to dive deeper to the
