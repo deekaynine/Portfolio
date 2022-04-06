@@ -23,16 +23,17 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid  sm:grid-cols-2 gap-8 px-4 ">
           <div className="sm:text-right text-4xl font-bold ">
             <p className={`${isAnimated}`}>
-              Hi. I'm Matthew, nice to meet you. Please take a look around.
+              Hi. I'm Matthew, nice to meet you. Happy to see you here!
             </p>
           </div>
 
           <div>
             <p className={`${isAnimated} py-2`}>
-              I am passionate about building applications that improves the
-              lives of others. Learning new ways to improve my coding
-              capabilities is what I love doing and I wish to dive deeper to the
-              development industry. How may I help you today?
+              I'm passionate about building applications with seamless UIs and a
+              great user experience. Alawys open to learning new ways to improve
+              my coding skills. I wish to dive deeper in the development
+              industry and collaborate with others to bring an memorable
+              application to customers. How may I help you today?
             </p>
           </div>
         </div>

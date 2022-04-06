@@ -36,10 +36,14 @@ const Home = () => {
             Matthew Tse
           </span>
         </div>
-        <h2 className="text-4xl sm:text-7xl font-bold text-red-700">
+        <h2
+          className={`${isAnimated} text-4xl sm:text-7xl font-bold text-red-700`}
+        >
           I'm a Web Developer!
         </h2>
-        <p className="text-black text-2xl py-4 max-w-[700px]">
+        <p
+          className={`${isAnimated} text-black text-2xl py-4 max-w-[700px] mt-2`}
+        >
           My mission is to provide exceptional digital experiences to everyone!
           Currently, I'm focused on building responsive full-stack web
           applications.
