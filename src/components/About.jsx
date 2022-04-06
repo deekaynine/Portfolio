@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const [isAnimated, setIsAnimated] = useState("");
+  const { ref, inView } = useInView({});
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated("animatable");
+    }
+  }, [inView]);
+
   return (
     <div name="about" className="w-full h-screen bg-[#000000] text-gray-300 ">
       <div className="flex flex-col justify-center items-center w-full h-full ">
         <div className="sm:text-right pb-8 ">
-          <p className="text-4xl font-bold inline ">About</p>
+          <p className={`text-4xl font-bold inline ${isAnimated}`} ref={ref}>
+            About
+          </p>
         </div>
 
         <div className="max-w-[1000px] w-full grid  sm:grid-cols-2 gap-8 px-4 ">

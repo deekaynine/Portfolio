@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
+  const [isAnimated, setIsAnimated] = useState("");
+  const { ref, inView } = useInView({});
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated("animatable");
+    }
+  }, [inView]);
   return (
     <div
       name="home"
@@ -21,21 +30,23 @@ const Home = () => {
         h-full
         "
       >
-        <p className="text-black">Hi, my name is </p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-black ">
-          Matthew Tse
-        </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#535050]">
-          I'm a Self Taught Web Developer!
+        <p className="text-black mb-2">Hi, my name is </p>
+        <div className="text-4xl sm:text-7xl font-bold text-black inline-block mb-3">
+          <span className={`${isAnimated} `} ref={ref}>
+            Matthew Tse
+          </span>
+        </div>
+        <h2 className="text-4xl sm:text-7xl font-bold text-red-700">
+          I'm a Web Developer!
         </h2>
-        <p className="text-black py-4 max-w-[700px]">
-          I'm an aspiring web developer specializing in building exceptional
-          digital experiences. Currently, I'm focused on building responsive
-          full-stack web applications.
+        <p className="text-black text-2xl py-4 max-w-[700px]">
+          My mission is to provide exceptional digital experiences to everyone!
+          Currently, I'm focused on building responsive full-stack web
+          applications.
         </p>
         <div>
           <Link to="projects" smooth={true} duration={500}>
-            <button className="text-gray-400 bg-black group border-2 px-6 py-3 my-2 flex items-center hover:text-white">
+            <button className="text-gray-300 bg-black group border-2 px-6 py-3 my-2 flex items-center hover:text-white">
               View Projects
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3" />
