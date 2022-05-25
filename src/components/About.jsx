@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+
 import ninja from "../assets/ninja.png";
 
 const About = () => {
@@ -32,11 +33,11 @@ const About = () => {
           <div>
             <p className={`${isAnimated} py-2`}>
               I like to build applications with seamless UIs and provide a great
-              user experience. Always open to challenges that push myself to the
-              limits and refine my coding skills. My goal is to dive deeper in
-              the development industry and collaborate with others to bring a
-              memorable experience to users globally. Let us collaborate with
-              one another!
+              user experience. Always looking for difficult challenges to push
+              myself to the limits and to learn from it. My goal is to dive
+              deeper in the development industry and collaborate with others to
+              bring a memorable experience to users globally. Let us collaborate
+              with one another!
             </p>
           </div>
         </div>

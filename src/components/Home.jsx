@@ -3,6 +3,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 
+import fire from "../assets/fire.png";
+
 const Home = () => {
   const [isAnimated, setIsAnimated] = useState("");
   const { ref, inView } = useInView({});
@@ -37,16 +39,16 @@ const Home = () => {
           </span>
         </div>
         <h2
-          className={`${isAnimated} text-4xl sm:text-7xl font-bold text-yellow-400`}
+          className={`${isAnimated} text-4xl sm:text-7xl font-bold text-yellow-400 flex`}
         >
           Coding is fun!
+          <img src={fire} className="w-[70px] ml-3 bottom-2 relative" alt="" />
         </h2>
         <p
           className={`${isAnimated} text-white text-2xl py-4 max-w-[700px] mt-2`}
         >
-          My mission is to learn and bring seemless digital experiences to
-          everyone! Currently, I'm focused on building fully responsive
-          end-to-end web applications.
+          My mission is bring smooth digital experiences to everyone! Currently,
+          I'm focused on building fully responsive end-to-end web applications.
         </p>
         <div>
           <Link to="projects" smooth={true} duration={500}>

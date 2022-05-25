@@ -23,7 +23,7 @@ const Skills = ({ useInView }) => {
   }, [inView]);
 
   return (
-    <div name="skills" className="bg-black text-gray-300">
+    <div name="skills" className="bg-[#2c2828] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-screen ">
         <div
           ref={ref}
