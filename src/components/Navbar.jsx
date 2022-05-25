@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[50px] mx-auto flex justify-between items-center p-5 bg-black text-gray-400 border-[0.5px] border-[#363636]">
+    <div className="fixed w-full h-[50px] mx-auto flex justify-between items-center p-5 bg-black text-gray-400 border-[0.5px] border-[#363636] z-10">
       <div className="mt-4">
         <img src={Logo} alt="Logo" style={{ width: "120px" }} />
       </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center z-10"
         }
       >
         <li className="py-6 text-4xl">
@@ -99,7 +99,7 @@ const Navbar = () => {
       {/* Socials */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/deekaynine"
@@ -107,7 +107,7 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="/"
@@ -115,7 +115,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="/"

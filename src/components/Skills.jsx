@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
@@ -7,7 +9,7 @@ import Redux from "../assets/redux.png";
 import Postgre from "../assets/pgadmin.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
-import { motion } from "framer-motion";
+import cat from "../assets/smirk-cat.png";
 
 const Skills = ({ useInView }) => {
   const [isAnimated, setIsAnimated] = useState("");
@@ -29,10 +31,12 @@ const Skills = ({ useInView }) => {
         >
           <p
             className={`${isAnimated}
-            }} text-4xl font-bold inline mb-4`}
+            }} text-4xl font-bold inline mb-4 flex`}
           >
             Skills
+            <img src={cat} className="pl-4 relative bottom-2" alt="cat" />
           </p>
+
           <p className={`${isAnimated} py-4`}>
             These are the technologies I've worked with:
           </p>

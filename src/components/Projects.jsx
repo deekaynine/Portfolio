@@ -5,6 +5,8 @@ import Eshop from "../assets/eshop.png";
 import cardblog from "../assets/cardblog.png";
 import clothing from "../assets/clothing-store-pic.PNG";
 import Music from "../assets/moosic.png";
+import Chat from "../assets/chat_pic.PNG";
+import dude from "../assets/young guy.png";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -28,14 +30,19 @@ const Projects = () => {
         <div className="pb-8">
           <p
             className={`${isAnimated}
-            text-4xl font-bold inline  text-gray-300`}
+            text-4xl font-bold  text-gray-300 flex`}
             ref={ref}
           >
             Projects
+            <img
+              src={dude}
+              className="h-[40px] w-[40px] ml-3 bottom-1"
+              alt=""
+            />
           </p>
           <p className={`${isAnimated}  mt-4 py-6`}>
             {" "}
-            Check out some of my recent work
+            Check out some of my recent work:
           </p>
         </div>
 
@@ -60,7 +67,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  E-Shop
                 </span>
                 <div className="pt-8 text-center">
                   <a
@@ -104,7 +111,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  Memory Blog
                 </span>
                 <div className="pt-8 text-center">
                   <a
@@ -149,7 +156,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  Clothing Store
                 </span>
                 <div className="pt-8 text-center">
                   <a
@@ -194,7 +201,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  Recipe Finder
                 </span>
                 <div className="pt-8 text-center">
                   <a
@@ -238,7 +245,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100">
                 <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  Music Player
                 </span>
                 <div className="pt-8 text-center">
                   <a
@@ -254,6 +261,50 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                     href="https://github.com/deekaynine/Moosic"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                      Code
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 0.3, delay: 0.8 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
+            <div
+              style={{ backgroundImage: `url(${Chat})` }}
+              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            >
+              {/* Hover Effects */}
+              <div className="opacity-0 group-hover:opacity-100">
+                <span className="text-2xl font-bold text-white tracking-wider">
+                  Chat App
+                </span>
+                <div className="pt-8 text-center">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://stargochat.netlify.app/"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                      Demo
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/deekaynine/stargo_chat"
                   >
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code

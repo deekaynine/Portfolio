@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import ninja from "../assets/ninja.png";
 
 const About = () => {
   const [isAnimated, setIsAnimated] = useState("");
@@ -14,26 +15,28 @@ const About = () => {
   return (
     <div name="about" className="w-full h-screen bg-[#000000] text-gray-300 ">
       <div className="flex flex-col justify-center items-center w-full h-full ">
-        <div className="sm:text-right pb-8 ">
-          <p className={`text-4xl font-bold inline ${isAnimated}`} ref={ref}>
-            About
+        <div className="sm:text-right pb-8 flex">
+          <p className={`text-4xl font-bold ${isAnimated}`} ref={ref}>
+            About Me
           </p>
+          <img src={ninja} className="pl-4 relative bottom-2 " alt="fire" />
         </div>
 
         <div className="max-w-[1000px] w-full grid  sm:grid-cols-2 gap-8 px-4 ">
           <div className="sm:text-right text-4xl font-bold ">
             <p className={`${isAnimated}`}>
-              Hi. I'm Matthew, nice to meet you. Happy to see you here!
+              Nice to meet you. Happy to see you here!
             </p>
           </div>
 
           <div>
             <p className={`${isAnimated} py-2`}>
-              I'm passionate about building applications with seamless UIs and a
-              great user experience. Alawys open to learning new ways to improve
-              my coding skills. I wish to dive deeper in the development
-              industry and collaborate with others to bring an memorable
-              application to customers. How may I help you today?
+              I like to build applications with seamless UIs and provide a great
+              user experience. Always open to challenges that push myself to the
+              limits and refine my coding skills. My goal is to dive deeper in
+              the development industry and collaborate with others to bring a
+              memorable experience to users globally. Let us collaborate with
+              one another!
             </p>
           </div>
         </div>

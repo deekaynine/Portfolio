@@ -2,17 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=VT323");
 
 @layer base {
+  * {
+    box-sizing: border-box;
+  }
+
   body {
-    @apply font-[Raleway];
+    font-family: "VT323";
+    overflow: auto;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
   li {
     @apply px-4;
     @apply cursor-pointer;
   }
 }
+
+/*sliding divs*/
 
 .content-div {
   background-repeat: no-repeat;

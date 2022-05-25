@@ -1,5 +1,7 @@
 import React from "react";
 
+import mail from "../assets/mail.png";
+
 const Contact = () => {
   return (
     <div
@@ -13,7 +15,10 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div class="flex flex-col items-center pb-8">
-          <p className="text-4xl font-bold inline  text-black">Contact</p>
+          <p className="text-4xl font-bold flex  text-black">
+            Contact
+            <img src={mail} className="h-[40px] w-[40px] ml-3" alt="mail" />
+          </p>
           <p className="text-black py-4">
             Submit the form below or shoot me an email -
             matthewtse123work@gmail.com
