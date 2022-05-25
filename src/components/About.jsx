@@ -34,10 +34,10 @@ const About = () => {
             <p className={`${isAnimated} py-2`}>
               I like to build applications with seamless UIs and provide a great
               user experience. Always looking for difficult challenges to push
-              myself to the limits and to learn from it. My goal is to dive
-              deeper in the development industry and collaborate with others to
-              bring a memorable experience to users globally. Let us collaborate
-              with one another!
+              past my limits and to learn from it. My goal is to dive deeper in
+              the development industry and collaborate with others to bring a
+              memorable experience to users globally. Let us collaborate with
+              one another!
             </p>
           </div>
         </div>
